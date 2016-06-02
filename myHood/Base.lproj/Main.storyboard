@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,11 +17,34 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBq-FB-fDb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="efM-hl-QkU"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BRW-yB-ttD">
+                                <rect key="frame" x="20" y="84" width="560" height="496"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BRW-yB-ttD" secondAttribute="bottom" constant="20" id="HzM-oG-7q9"/>
+                            <constraint firstItem="GBq-FB-fDb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ID0-6e-Xv4"/>
+                            <constraint firstItem="BRW-yB-ttD" firstAttribute="top" secondItem="GBq-FB-fDb" secondAttribute="bottom" constant="20" id="Lh8-hQ-l10"/>
+                            <constraint firstItem="BRW-yB-ttD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="RgI-Qc-5PM"/>
+                            <constraint firstAttribute="trailing" secondItem="GBq-FB-fDb" secondAttribute="trailing" id="T9C-zB-r25"/>
+                            <constraint firstItem="GBq-FB-fDb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="UvM-08-CW0"/>
+                            <constraint firstItem="BRW-yB-ttD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mio-iQ-grd"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="275" y="-130"/>
         </scene>
     </scenes>
 </document>
