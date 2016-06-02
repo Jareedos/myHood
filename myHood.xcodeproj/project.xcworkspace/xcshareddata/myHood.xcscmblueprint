@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "31443F6CA10574C946CD8F111F610F569747ECD8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D0C04B1B2A58587B0BBCB0A549E7CDFE42E87364" : 0,
+    "31443F6CA10574C946CD8F111F610F569747ECD8" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E6844FD0-989F-458F-829F-DC731C1CD174",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D0C04B1B2A58587B0BBCB0A549E7CDFE42E87364" : "",
+    "31443F6CA10574C946CD8F111F610F569747ECD8" : "myHood\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "myHood",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "myHood.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Jareedos\/myHood.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "31443F6CA10574C946CD8F111F610F569747ECD8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Jareedos\/myCity.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D0C04B1B2A58587B0BBCB0A549E7CDFE42E87364"
+    }
+  ]
+}
