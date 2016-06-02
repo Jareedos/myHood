@@ -116,6 +116,9 @@
                             <constraint firstItem="BRW-yB-ttD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mio-iQ-grd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="BRW-yB-ttD" id="t2C-Gt-4wg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
