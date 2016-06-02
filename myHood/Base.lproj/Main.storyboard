@@ -46,9 +46,63 @@
                                     <constraint firstAttribute="bottom" secondItem="A8Q-bZ-5TE" secondAttribute="bottom" constant="8" id="iAW-m4-Nad"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BRW-yB-ttD">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="89" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BRW-yB-ttD">
                                 <rect key="frame" x="20" y="84" width="560" height="496"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="pcZ-ce-nQG">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="89"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pcZ-ce-nQG" id="YXL-yT-17m">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="88.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="btJ-xB-Ip9">
+                                                    <rect key="frame" x="8" y="8" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="ish-7i-2GS"/>
+                                                        <constraint firstAttribute="height" constant="70" id="tAB-OO-jgY"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music man needs to go!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgT-qe-sK9">
+                                                    <rect key="frame" x="86" y="8" width="466" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="lPF-Pg-oFO"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.18972355769230753" green="0.18972355769230753" blue="0.18972355769230753" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hey this neighbor is such a punk. He blasts his Korn music way tooooooo loud. I am thinking about burning his house down!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="07B-z1-py4">
+                                                    <rect key="frame" x="86" y="32" width="466" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="gBR-fV-bJf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
+                                                    <color key="textColor" red="0.21065705128205114" green="0.21065705128205114" blue="0.21065705128205114" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="07B-z1-py4" firstAttribute="leading" secondItem="btJ-xB-Ip9" secondAttribute="trailing" constant="8" id="8Al-Lz-Cdv"/>
+                                                <constraint firstItem="btJ-xB-Ip9" firstAttribute="leading" secondItem="YXL-yT-17m" secondAttribute="leadingMargin" id="BC0-TS-cxc"/>
+                                                <constraint firstItem="HgT-qe-sK9" firstAttribute="trailing" secondItem="YXL-yT-17m" secondAttribute="trailingMargin" id="Jsz-9X-abk"/>
+                                                <constraint firstItem="HgT-qe-sK9" firstAttribute="top" secondItem="YXL-yT-17m" secondAttribute="topMargin" id="MWH-bX-rpk"/>
+                                                <constraint firstItem="07B-z1-py4" firstAttribute="trailing" secondItem="YXL-yT-17m" secondAttribute="trailingMargin" id="NaF-qx-au5"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="btJ-xB-Ip9" secondAttribute="bottom" id="aC9-rg-d2N"/>
+                                                <constraint firstItem="HgT-qe-sK9" firstAttribute="leading" secondItem="btJ-xB-Ip9" secondAttribute="trailing" constant="8" id="cOQ-On-I5U"/>
+                                                <constraint firstItem="btJ-xB-Ip9" firstAttribute="top" secondItem="YXL-yT-17m" secondAttribute="topMargin" id="nem-80-UZf"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="btJ-xB-Ip9" secondAttribute="bottom" constant="2.5" id="sk8-2K-Q7K"/>
+                                                <constraint firstItem="07B-z1-py4" firstAttribute="top" secondItem="HgT-qe-sK9" secondAttribute="bottom" constant="3" id="wP9-CS-M42"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="aC9-rg-d2N"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -70,6 +124,7 @@
     </scenes>
     <resources>
         <image name="bannerlogo" width="518" height="194"/>
+        <image name="barrel-water-bridge" width="550" height="440"/>
         <image name="camera" width="100" height="77"/>
     </resources>
 </document>
