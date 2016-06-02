@@ -18,6 +18,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        var post = Post(imagePath: "", title: "Post1", descriptin: "post 1 description")
+        var post2 = Post(imagePath: "", title: "Post2", descriptin: "post 2 description")
+        var post3 = Post(imagePath: "", title: "Post3", descriptin: "post 3 description")
+        
+        posts.append(post)
+        posts.append(post2)
+        posts.append(post3)
+        
+        tableView.reloadData()
+        
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -25,7 +36,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        <#code#>
+        
+        let post = posts[indexPath.row]
+        if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell {
+            cell.configureCell(post)
+            return cell
+        } else {
+            let cell = PostCell()
+            cell.configureCell(post)
+            return cell
+        }
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
