@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF3E9C271D034B2B0076165B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3E9C261D034B2B0076165B /* DataService.swift */; };
 		BFE9D0E61D00CC8F005DF8EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9D0E51D00CC8F005DF8EF /* AppDelegate.swift */; };
 		BFE9D0E81D00CC8F005DF8EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9D0E71D00CC8F005DF8EF /* ViewController.swift */; };
 		BFE9D0EB1D00CC8F005DF8EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE9D0E91D00CC8F005DF8EF /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF3E9C261D034B2B0076165B /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		BFE9D0E21D00CC8F005DF8EF /* myHood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myHood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE9D0E51D00CC8F005DF8EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE9D0E71D00CC8F005DF8EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF3E9C251D034B060076165B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BF3E9C261D034B2B0076165B /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		BFE9D0D91D00CC8F005DF8EF = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +70,7 @@
 		BFE9D0E41D00CC8F005DF8EF /* myHood */ = {
 			isa = PBXGroup;
 			children = (
+				BF3E9C251D034B060076165B /* Services */,
 				BFE9D0F71D00D040005DF8EF /* Model */,
 				BFE9D0FA1D00F595005DF8EF /* View */,
 				BFE9D0FD1D028C14005DF8EF /* Controller */,
@@ -172,6 +183,7 @@
 				BFE9D0F91D00D056005DF8EF /* Post.swift in Sources */,
 				BFE9D0E81D00CC8F005DF8EF /* ViewController.swift in Sources */,
 				BFE9D0FF1D028CAE005DF8EF /* AddPostVC.swift in Sources */,
+				BF3E9C271D034B2B0076165B /* DataService.swift in Sources */,
 				BFE9D0E61D00CC8F005DF8EF /* AppDelegate.swift in Sources */,
 				BFE9D0FC1D00F5B5005DF8EF /* PostCell.swift in Sources */,
 			);
@@ -325,6 +337,7 @@
 				BFE9D0F61D00CC8F005DF8EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
