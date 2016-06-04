@@ -14,6 +14,7 @@
 		BFE9D0F01D00CC8F005DF8EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE9D0EE1D00CC8F005DF8EF /* LaunchScreen.storyboard */; };
 		BFE9D0F91D00D056005DF8EF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9D0F81D00D056005DF8EF /* Post.swift */; };
 		BFE9D0FC1D00F5B5005DF8EF /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9D0FB1D00F5B5005DF8EF /* PostCell.swift */; };
+		BFE9D0FF1D028CAE005DF8EF /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE9D0FE1D028CAE005DF8EF /* AddPostVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BFE9D0F11D00CC8F005DF8EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFE9D0F81D00D056005DF8EF /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		BFE9D0FB1D00F5B5005DF8EF /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		BFE9D0FE1D028CAE005DF8EF /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +60,11 @@
 		BFE9D0E41D00CC8F005DF8EF /* myHood */ = {
 			isa = PBXGroup;
 			children = (
-				BFE9D0FA1D00F595005DF8EF /* View */,
 				BFE9D0F71D00D040005DF8EF /* Model */,
-				BFE9D0E51D00CC8F005DF8EF /* AppDelegate.swift */,
-				BFE9D0E71D00CC8F005DF8EF /* ViewController.swift */,
-				BFE9D0E91D00CC8F005DF8EF /* Main.storyboard */,
+				BFE9D0FA1D00F595005DF8EF /* View */,
+				BFE9D0FD1D028C14005DF8EF /* Controller */,
 				BFE9D0EC1D00CC8F005DF8EF /* Assets.xcassets */,
+				BFE9D0E51D00CC8F005DF8EF /* AppDelegate.swift */,
 				BFE9D0EE1D00CC8F005DF8EF /* LaunchScreen.storyboard */,
 				BFE9D0F11D00CC8F005DF8EF /* Info.plist */,
 			);
@@ -82,8 +83,18 @@
 			isa = PBXGroup;
 			children = (
 				BFE9D0FB1D00F5B5005DF8EF /* PostCell.swift */,
+				BFE9D0E91D00CC8F005DF8EF /* Main.storyboard */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		BFE9D0FD1D028C14005DF8EF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFE9D0E71D00CC8F005DF8EF /* ViewController.swift */,
+				BFE9D0FE1D028CAE005DF8EF /* AddPostVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +171,7 @@
 			files = (
 				BFE9D0F91D00D056005DF8EF /* Post.swift in Sources */,
 				BFE9D0E81D00CC8F005DF8EF /* ViewController.swift in Sources */,
+				BFE9D0FF1D028CAE005DF8EF /* AddPostVC.swift in Sources */,
 				BFE9D0E61D00CC8F005DF8EF /* AppDelegate.swift in Sources */,
 				BFE9D0FC1D00F5B5005DF8EF /* PostCell.swift in Sources */,
 			);
