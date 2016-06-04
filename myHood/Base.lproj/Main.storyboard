@@ -166,6 +166,9 @@
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="cancelBtnPressed:" destination="Mgc-Kr-ZuB" eventType="touchUpInside" id="h4i-BR-NYJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -190,6 +193,9 @@
                                 <state key="normal" title="ADD PIC">
                                     <color key="titleColor" red="1" green="0.84550307440000005" blue="0.094546772890000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addPicBtnPressed:" destination="Mgc-Kr-ZuB" eventType="touchUpInside" id="oHV-dg-oxL"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dfi-rU-WRA">
                                 <rect key="frame" x="20" y="366" width="560" height="30"/>
@@ -218,6 +224,9 @@
                                         <exclude reference="CSJ-pg-dYX"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="makePostBtnPressed:" destination="Mgc-Kr-ZuB" eventType="touchUpInside" id="b41-OI-bv0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -243,10 +252,15 @@
                             <constraint firstAttribute="trailing" secondItem="N8Q-S7-74u" secondAttribute="trailing" id="vPd-RR-MYv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="descField" destination="Pj3-qZ-W78" id="SOB-Nj-Rdn"/>
+                        <outlet property="postImg" destination="cXz-EH-6xG" id="LRo-uU-U8j"/>
+                        <outlet property="titleField" destination="dfi-rU-WRA" id="1Dc-zh-m1d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e9Z-rG-8U7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="-129"/>
+            <point key="canvasLocation" x="923" y="-129"/>
         </scene>
     </scenes>
     <resources>
