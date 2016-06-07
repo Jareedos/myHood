@@ -12,20 +12,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tableView: UITableView!
     
-    var posts = [Post]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         
-        var post = Post(imagePath: "", title: "Post1", descriptin: "post 1 description")
-        var post2 = Post(imagePath: "", title: "Post2", descriptin: "post 2 description")
-        var post3 = Post(imagePath: "", title: "Post3", descriptin: "post 3 description")
-        
-        posts.append(post)
-        posts.append(post2)
-        posts.append(post3)
+   
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("onPostsLoaded"), name: "postsLoaded", object: nil)
         
         tableView.reloadData()
         
@@ -37,7 +31,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let post = posts[indexPath.row]
+        let post = DataService.instance.loadedPosts[indexPath.row]
         if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell {
             cell.configureCell(post)
             return cell
@@ -53,7 +47,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return posts.count
+        return DataService.instance.loadedPosts.count
+    }
+    
+    func onPostsLoaded(notif: AnyObject){
+        tableView.reloadData()
     }
 
 }

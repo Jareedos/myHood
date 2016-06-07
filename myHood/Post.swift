@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Post {
+class Post{
     
     private var _imagePath: String
     private var _title: String
@@ -32,4 +32,6 @@ class Post {
         self._title = title
         self._postDesc = descriptin
     }
+    
+
 }
