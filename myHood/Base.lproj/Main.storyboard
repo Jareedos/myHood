@@ -180,7 +180,7 @@
                                     <constraint firstAttribute="height" constant="64" id="wfk-fC-2WF"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrel-water-bridge" translatesAutoresizingMaskIntoConstraints="NO" id="cXz-EH-6xG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cXz-EH-6xG">
                                 <rect key="frame" x="180" y="101" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="RrC-aZ-cqi"/>
